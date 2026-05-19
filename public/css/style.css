@@ -1,0 +1,450 @@
+
+.navbar {
+    background-color: #2C6E49;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar-links a {
+    color: #e8f5e9;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+    color: #F4A261;
+}
+
+.navbar-links .btn-nav {
+    background-color: #F4A261;
+    color: #1A1A2E;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.navbar-links .btn-nav:hover {
+    background-color: #e76f51;
+    color: #fff;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.page-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #F4A261;
+    padding-bottom: 0.75rem;
+}
+
+.page-header h1 {
+    font-size: 1.8rem;
+    color: #2C6E49;
+}
+
+.page-header p {
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-left: 4px solid #2C6E49;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2C6E49;
+    margin-bottom: 0.4rem;
+}
+
+.card-title a {
+    color: #2C6E49;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    text-decoration: underline;
+    color: #F4A261;
+}
+
+.card-meta {
+    font-size: 0.82rem;
+    color: #777;
+    margin-bottom: 0.75rem;
+}
+
+.card-meta span {
+    margin-right: 1rem;
+}
+
+.card-excerpt {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+
+.badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-restaurant { background: #d8f3dc; color: #1b4332; }
+.badge-food       { background: #fde8d0; color: #7c3d12; }
+.badge-both       { background: #e8eaf6; color: #283593; }
+
+
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover { transform: translateY(-1px); }
+
+.btn-primary {
+    background-color: #2C6E49;
+    color: #fff;
+}
+.btn-primary:hover { background-color: #1b4332; }
+
+.btn-accent {
+    background-color: #F4A261;
+    color: #1A1A2E;
+}
+.btn-accent:hover { background-color: #e76f51; color: #fff; }
+
+.btn-danger {
+    background-color: #e63946;
+    color: #fff;
+}
+.btn-danger:hover { background-color: #b5151f; }
+
+.btn-sm {
+    padding: 4px 12px;
+    font-size: 0.82rem;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #2C6E49;
+    color: #2C6E49;
+}
+.btn-outline:hover { background: #2C6E49; color: #fff; }
+
+
+.form-group {
+    margin-bottom: 1.1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+    color: #2C6E49;
+}
+
+.form-control {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1.5px solid #c5c5c5;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    background: #fff;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #2C6E49;
+    box-shadow: 0 0 0 3px rgba(44,110,73,0.15);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%232C6E49' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M5 8l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+}
+
+.form-error {
+    color: #e63946;
+    font-size: 0.82rem;
+    margin-top: 0.25rem;
+}
+
+.errors-box {
+    background: #fff0f1;
+    border: 1.5px solid #e63946;
+    border-radius: 6px;
+    padding: 0.9rem 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.errors-box ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #e63946;
+    font-size: 0.9rem;
+}
+
+
+.flash {
+    padding: 0.85rem 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+.flash-success {
+    background: #d8f3dc;
+    color: #1b4332;
+    border: 1.5px solid #95d5b2;
+}
+
+.flash-error {
+    background: #fff0f1;
+    color: #e63946;
+    border: 1.5px solid #f4b8bb;
+}
+
+
+.comments-section {
+    margin-top: 2rem;
+}
+
+.comments-section h3 {
+    color: #2C6E49;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.comment-item {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    padding: 0.9rem 1rem;
+    background: #f5faf7;
+    border-radius: 8px;
+    border-left: 3px solid #2C6E49;
+}
+
+.comment-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #2C6E49;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.comment-body {
+    flex: 1;
+}
+
+.comment-author {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #2C6E49;
+}
+
+.comment-date {
+    font-size: 0.78rem;
+    color: #999;
+    margin-left: 0.5rem;
+}
+
+.comment-text {
+    font-size: 0.93rem;
+    color: #333;
+    margin-top: 0.25rem;
+}
+
+.comment-actions {
+    margin-top: 0.4rem;
+}
+
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.admin-table th {
+    background-color: #2C6E49;
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 0.88rem;
+}
+
+.admin-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+}
+
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+.admin-table tr:hover td {
+    background-color: #f5faf7;
+}
+
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-top: 4px solid #F4A261;
+}
+
+.stat-card .stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2C6E49;
+}
+
+.stat-card .stat-label {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+
+.loading-spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #c5c5c5;
+    border-top-color: #2C6E49;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+
+.text-muted  { color: #777; font-size: 0.88rem; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.flex-row { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+.divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #888;
+}
+.empty-state h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+
+
+.visitor-notice {
+    background: #fde8d0;
+    border: 1.5px solid #F4A261;
+    border-radius: 6px;
+    padding: 0.85rem 1.2rem;
+    margin: 1.2rem 0;
+    color: #7c3d12;
+    font-size: 0.92rem;
+}
+
+
+.post-detail {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+}
+
+.post-detail h1 {
+    font-size: 1.6rem;
+    color: #1A1A2E;
+    margin-bottom: 0.6rem;
+}
+
+.post-content {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-top: 1.2rem;
+    white-space: pre-wrap;
+}
